@@ -1,0 +1,90 @@
+#experience {
+	padding-top: 2rem;
+	height: 75vh;
+}
+
+.experience__container {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 3rem;
+	width: 75%;
+	text-align: center;
+}
+
+.experience__front-end,
+.experience__back-end {
+	gap: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: var(--bg-color-variant);
+	box-shadow: 0 0 10px 1px var(--color-white-light);
+	width: 50%;
+	padding: 2rem;
+	border-radius: 2rem;
+	justify-content: flex-start;
+}
+
+.experience__front-end h3,
+.experience__back-end h3 {
+	grid-column: span 2;
+}
+
+.experience__skill {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.experience__skill .icon {
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+
+/* ====================== MEDIUM DEVICES ===================*/
+
+@media screen and (max-width: 1048px) {
+	#experience {
+		margin-top: 1rem;
+	}
+
+	.experience__container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.experience__front-end,
+	.experience__back-end {
+		display: grid;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.experience__skill {
+		display: flex;
+		align-items: center;
+		padding: 0 3rem;
+		gap: 0.5rem;
+	}
+}
+/* ====================== SMALL DEVICES ===================*/
+@media screen and (max-width: 620px) {
+	#experience {
+		margin-top: 0;
+		padding-top: 2rem;
+	}
+
+	#experience h2 {
+		margin-bottom: 1rem;
+	}
+
+	.experience__container {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.experience__front-end,
+	.experience__back-end {
+		padding: 1rem;
+		gap: 0.4rem;
+	}
+}

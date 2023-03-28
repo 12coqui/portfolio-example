@@ -1,0 +1,160 @@
+.container__about {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;
+	gap: 2rem;
+}
+
+.info__about {
+	display: flex;
+	flex-direction: column;
+	padding-right: 4rem;
+}
+
+.img-box {
+	height: 25rem;
+	width: 25rem;
+	border-radius: 3rem;
+	border: 0 3px black solid;
+	background-color: var(--primary-color);
+}
+
+.img-box img {
+	height: 25rem;
+	width: 25rem;
+	border-radius: 3rem;
+	transform: rotateZ(10deg);
+	transition: var(--transition);
+}
+
+.img-box img:hover {
+	transform: rotateZ(0);
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 50%;
+	place-items: center;
+	gap: 1rem;
+}
+
+.card__about {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+	text-align: center;
+	background-color: var(--bg-color-variant);
+	opacity: 1;
+	height: 150px;
+	width: 150px;
+	flex-wrap: wrap;
+	box-shadow: 0 0 10px 1px var(--color-white-light);
+}
+
+.card__about #icon {
+	font-weight: 900;
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+
+.description__about {
+	padding: 1rem 0;
+}
+
+/* ====================== MEDIUM DEVICES ===================*/
+
+@media screen and (max-width: 1048px) {
+	#about{
+	margin-bottom: 0;
+	}
+
+	.container__about {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+		width: 70%;
+	}
+
+	.img-box {
+		height: 60vw;
+		width: 60vw;
+	}
+
+	.img-box img {
+		transform: rotate(0);
+		height: 60vw;
+		width: 60vw;
+	}
+
+	.about__btn {
+		align-self: center;
+	}
+
+	.info__about {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0;
+	}
+}
+
+/* ====================== SMALL DEVICES ===================*/
+@media screen and (max-width: 620px) {
+	#about {
+		margin-top: 0;
+		padding: 1.5rem;
+		height: 100vh;
+	}
+
+	#about h2 {
+		margin: 0;
+	}
+
+	.container__about {
+		gap: 1.25rem;
+		margin: 0 auto;
+		width: 95%;
+	}
+
+	.img-box {
+		height: 50vw;
+		width: 50vw;
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card__about {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		height: 2rem;
+		gap: 0.3rem;
+		padding: 0 0.5rem;
+	}
+
+	.card__about #icon {
+		font-weight: 900;
+		font-size: 1.25rem;
+	}
+
+	p {
+		font-size: 0.85rem;
+		word-wrap: normal;
+		word-break: break-all;
+	}
+
+	.btn {
+		padding: 0.3rem 0.75rem;
+	}
+}

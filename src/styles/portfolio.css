@@ -1,0 +1,93 @@
+#portfolio{
+padding-top: 2rem;
+margin-top: 4rem;
+}
+.container__portfolio {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 75%;
+	gap: 1.5rem;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+	padding: .75rem .5rem;
+	background-color: var(--bg-color-variant);
+	box-shadow: 0 0 10px 1px var(--color-white-light);
+    border-radius: 1rem;
+}
+
+img {
+    opacity: .9;
+	width: 275px;
+	height: auto;
+	border-radius: 1rem;
+}
+
+a{
+margin: .25rem .5rem;
+padding: .5rem .75rem !important;
+}
+
+@media screen and (max-width: 1048px) {
+.container__portfolio {
+	display: grid;
+	grid-template-columns: 1fr;
+    justify-items: center;
+	width: 95%;
+margin: 0 auto;}
+
+.card{
+padding: 2rem;
+width: 80%;
+}
+
+.card div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+}
+
+@media screen and (max-width: 600px) {
+.container__portfolio {
+	width: 85%;
+}
+
+.card{
+display: grid;
+grid-template-columns: 1fr;
+padding: .5rem;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+
+.card__btn{
+display: grid;
+grid-template-rows: repeat(2, 1fr);
+}
+
+.card__btn h3{
+font-size: 1.1rem;
+padding: .5rem 0;
+}
+
+#portfolio .btn{
+margin: .25rem .5rem;
+padding: .5rem .75rem !important;
+}
+}
+
